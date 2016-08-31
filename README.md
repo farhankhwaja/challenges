@@ -1,8 +1,3 @@
-#Prima.ai Engineering Challenge
-
-{{TOC}}
-+++
-
 #Technologies
 [Docker](https://docs.docker.com/)
 [Packer](https://www.packer.io/)
@@ -14,7 +9,7 @@
 [Jasmine](http://jasmine.github.io/2.0/introduction.html)
 [Chai](http://chaijs.com/)
 [Wallaby](https://wallabyjs.com/)
-+++
+
 
 #Directions
 
@@ -32,7 +27,6 @@ This challenge will be evaluated in the following areas:
 
 Create a fork of this repository and create a feature branch, *last-name*/backend-solution. When your solution is complete, issue a [pull request pointing your feature branch to upstream](https://help.github.com/articles/merging-a-pull-request/).
 
-+++
 
 #Challenge
 
@@ -62,7 +56,6 @@ All API work should exemplify best practice and follow M~~*V*~~C structure. Code
 
 Remember an API should be able to internationalize request output, no string literals should be placed directly in either controller nor model. Utilize the lang JSON file located within the *i18n* directory.
 
-+++
 
 #Bonus
 
@@ -77,4 +70,3 @@ Install [Wallaby](https://wallabyjs.com/) for your IDE flavor to locally develop
 Write a unit test to test the route endpoint controller. Also, write an integration test that covers the rest point user model. Your must not connect with a live database at any point, the integration test is required to connect with a live database before the start of the test. An integration helper that initializes the connection to Mongo before the test has been provided within the repository for you.
 
 Jasmine is shipped as default for use with Wallaby and the Wallaby config file has been configured to used Chai as an assertion library.
-	
