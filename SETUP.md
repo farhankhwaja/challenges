@@ -6,20 +6,16 @@
 
 [NVM](https://github.com/creationix/nvm)
 
+[Wallaby](https://wallabyjs.com/)
 
-Install application pipeline requirements
+
+Install application pipeline requirements. Make sure to expose the NODE_PATH for your IDE flavor as a requirement to Wallaby or your tests will not run.
 
 ```
 npm i
 ```
 
-### Create Docker Image
-
-```
-packer build packer/api.json
-```
-
-### Start Docker Containers for Integration Testing
+### Start Mongo Containers for Integration Testing
 
 ```
 docker-compose -f compose/test.yml up
@@ -33,7 +29,7 @@ Do not just copy and paste. Learn what's happening and adjust accordingly before
 
 ```
 mkdir -p data
-docker run --name mongo -d -v `pwd`/data:/data/db -p 27017 mongo
+docker run --name mongo -d -v `pwd`/data/test:/data/db -p 27017 mongo
 docker exec -it mongo mongo
 
 db.createUser({ user: 'admin', pwd: 'password', roles: [ { role: "root", db: "admin" } ] });
