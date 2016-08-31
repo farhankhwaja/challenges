@@ -1,0 +1,9 @@
+version: '2'
+services:
+  mongo-test:
+    container_name: mongo-test
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ../data/environments/test:/data/db

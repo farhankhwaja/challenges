@@ -1,0 +1,32 @@
+{
+  "name": "prima-ai-api-tools",
+  "version": "0.1.0",
+  "description": "API tools for prima-ai",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prima-ai/api.git"
+  },
+  "author": "listenrightmeow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prima-ai/api/issues"
+  },
+  "homepage": "https://github.com/prima-ai/api#readme",
+  "dependencies": {
+    "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "bcrypt": "^0.8.7",
+    "chai": "^3.5.0",
+    "eslint": "^3.3.1",
+    "eslint-plugin-jasmine": "^1.8.1",
+    "grunt": "^1.0.1",
+    "gruntify-eslint": "^3.0.0",
+    "jasmine": "^2.4.1",
+    "load-grunt-config": "^0.19.2",
+    "mongoose": "^4.5.10"
+  }
+}

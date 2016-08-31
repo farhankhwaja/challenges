@@ -1,0 +1,25 @@
+{
+  "name": "prima-ai-api",
+  "version": "0.1.0",
+  "description": "API for prima-ai",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prima-ai/api.git"
+  },
+  "author": "listenrightmeow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prima-ai/api/issues"
+  },
+  "homepage": "https://github.com/prima-ai/api#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "mongoose": "^4.5.9",
+    "nodemon": "^1.10.0",
+    "restify": "^4.1.1"
+  }
+}

@@ -1,0 +1,42 @@
+{
+	"builders": [
+		{
+			"export_path": "prima-ai-api.tar",
+			"image": "node:6.5.0",
+			"type": "docker"
+		}
+	],
+	"post-processors": [
+		{
+			"repository": "prima-ai-api",
+			"tag": "local",
+			"type": "docker-import"
+		}
+	],
+	"provisioners": [
+    {
+      "cookbook_paths": [
+        "cookbooks"
+      ],
+      "run_list": [
+        "api::directories"
+      ],
+      "type": "chef-solo",
+      "prevent_sudo": true
+    },{
+      "type": "file",
+      "source": "app/package.json",
+      "destination": "/var/www/api/package.json"
+    },{
+			"cookbook_paths": [
+				"cookbooks"
+			],
+			"run_list": [
+				"api::default",
+				"api::npm"
+			],
+			"type": "chef-solo",
+			"prevent_sudo": true
+		}
+	]
+}

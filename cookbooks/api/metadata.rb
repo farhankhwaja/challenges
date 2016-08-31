@@ -1,0 +1,6 @@
+name 'api'
+maintainer 'listenrightmeow'
+maintainer_email 'mdyer@n9nemedia.net'
+license 'MIT'
+description 'Installs/Configures api'
+version '0.1.0'

@@ -1,0 +1,41 @@
+env:
+  es6: true
+  node: true
+extends: 'eslint:recommended'
+plugins:
+  - ['jasmine']
+rules:
+  comma-dangle:
+    - 0
+  indent:
+    - error
+    - 2
+  'jasmine/named-spy':
+    - 0
+  'jasmine/no-focused-tests':
+    - 2
+  'jasmine/no-disabled-tests':
+    - 1
+  'jasmine/no-spec-dupes':
+    - [1, 'block']
+  'jasmine/no-suite-dupes':
+    - [1, 'block']
+  'jasmine/missing-expect':
+    - [0, 'expect()']
+  'jasmine/no-suite-callback-args':
+    - 2
+  'jasmine/valid-expect':
+    - 1
+  'jasmine/no-assign-spyon':
+    - 0
+  linebreak-style:
+    - error
+    - unix
+  no-console: off
+  no-extra-boolean-cast: off
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
