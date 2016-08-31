@@ -13,7 +13,7 @@
 
 #Directions
 
-[Setup Instructions](https://github.com/prima-ai/challenges/blob/master/SETUP.md)
+[Setup Instructions](https://github.com/prima-ai/challenges/blob/backend/registration/SETUP.md)
 
 Utilizing this repository, build local docker images using Packer from the root of this repository. The chef cookbooks are free for the challenge.
 
