@@ -35,7 +35,7 @@ Utilizing the technologies listed within this document, we’d like you to build
 
 Utilizing the links provided above build a Restify API with OOP and M~~*V*~~C best practices. The API should connect with a separate Mongo container that will house the data relevant to this exercise. These services should be linked with [Docker Compose](https://docs.docker.com/compose/compose-file/). Utilize [Docker Compose’s first-class networking](https://docs.docker.com/compose/networking/) to connect the two services.
 
-Expose a POST endpoint `/register` from the API container that validates the following required body parameters:
+Expose a POST endpoint `/register` from the API service that validates the following required body parameters:
 
 ```
 email: String
